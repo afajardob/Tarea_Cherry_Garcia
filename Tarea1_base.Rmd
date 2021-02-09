@@ -72,7 +72,8 @@ kable(names, caption = "Contenido del DF",
 
 ### 2. A qué nivel está la base? Esto es, cuál es la variable que define la base de manera única. Si no la hay, crea una y muestra que es única a nivel de la base (Muestra el código)
 
-No hay un nivel por lo que generaremos una variable que sea el número de compra de cada hogar (household ID), para esto usamos **ave()** con la función **seq_along**. Otra manera de hacerlo es con dplyr. Comprobamos que ambos resultados nos dan el mismo resultado.
+El nivel es el hogar, para eso está el household_id, pero queremos ver si es un panel balanceado o no.
+Hay dos maneras de revisarlo, 1) generaremos una variable que sea el número de compra de cada hogar (household ID), para esto usamos **ave()** con la función **seq_along**. 2) Otra manera de hacerlo es con dplyr. Comprobamos que ambos resultados nos dan el mismo resultado.
 
 La base de datos la tenemos a nivel de compra j por cada hogar i.
 
